@@ -147,7 +147,15 @@ a{
         width: 100%;
     }
     .socials{
-        margin-top: 40rem;
-        margin-bottom: 2%;
+        margin-top: 45rem;
+        margin-bottom: 3%;
+    }
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .first{
+        width: 70%;
     }
 }

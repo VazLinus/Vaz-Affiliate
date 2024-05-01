@@ -1,0 +1,318 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input{
+    border: 1px solid gray;
+    margin-top: 4%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.input p{
+    width: 15%;
+}
+.searchbar{
+    border: 1px solid gray;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.707);
+    padding: 12px;
+    border-radius: 10px;
+    margin-right: auto;
+    width: 20%;
+}
+.firstinp{
+    width: 80%;
+    text-align: right;
+    position: relative;
+}
+.firstinp a{
+    border-radius: 10px;
+    padding: 9px;
+    color: white;
+    background-color: rgb(0, 94, 255);
+    position: absolute;
+    right: 2px;
+    top: 3px;
+}
+.secondinp{
+    padding: 12px;
+    width: 18%;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.707);
+}
+.secondinp option{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* .row1{
+    padding: 20px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
+}
+.r1{
+
+    border: 1px solid red;
+
+    width: 50%;
+    box-shadow: 1px 1px 5px gray;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding-top: 15px;
+    display: block;
+    position: relative;
+    height: 400px;
+}
+
+.r1 > img{
+    width : 60%;
+
+    border: 1px solid blue;
+}
+
+.item-link{
+    display: inline-block;
+}
+.r1 h2{
+    position: absolute;
+    width: 100%;
+    bottom: 125px;
+    text-align: center;
+}
+.r1 p{
+    position: absolute;
+    width: 100%;
+    bottom: 85px;
+    text-align: center;
+}
+
+.r1 #img{
+    border: 1px solid gray;
+    height: 200px;
+    padding: 43.5px;
+
+    background: linear-gradient(to right, rgb(0, 94, 255), rgb(0, 8, 255));
+}
+
+.r1:hover{
+    box-shadow: 1px 2px 10px black;
+}
+.r1 p{
+    margin-bottom: 5px;
+}
+.r1 .img img{
+    width: 37px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.r1 .img{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+} */
+
+
+
+.row1{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.r1{
+    /* border: 1px solid red; */
+    width: 50%;
+    /* width: 50rem; */
+    box-shadow: 1px 1px 5px gray;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    display: block;
+    /* position: relative; */
+    /* min-height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.r1 > img{
+    width : 50%;
+    flex: 1;
+    flex-shrink: 0;
+    /* border: 1px solid blue; */
+}
+
+.item-link{
+    display: inline-block;
+}
+.r1 h2{
+    /* position: absolute; */
+    max-width: 70%;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin: auto;
+    /* bottom: 125px; */
+    text-align: center;
+}
+.r1 p{
+    /* position: absolute; */
+    width: 100%;
+    /* bottom: 85px; */
+    text-align: center;
+}
+
+
+.r1 .pics{
+    /* width: 16rem; */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+.r1 .pics img{
+    max-width: 70%;
+}
+.r1 #img{
+    border: 1px solid gray;
+    height: 200px;
+    padding: 43.5px;
+    /* background: linear-gradient(to right, rgb(0, 94, 255), rgb(0, 8, 255)); */
+}
+
+.r1:hover{
+    box-shadow: 1px 2px 10px black;
+}
+.r1 p{
+    margin-bottom: 5px;
+}
+.r1 .img img{
+    width: 37px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.r1 .img{
+    /* position: absolute; */
+    width: 100%;
+    /* bottom: 20px;
+    border-collapse: collapse; */
+    /* left: 50px; */
+    /* margin-bottom: auto; */
+    /* align-items: end; */
+    /* margin-top: auto; */
+}
+
+
+
+@media (max-width: 800px) {
+    body{
+        width: 100%;
+    }
+    .input{
+        margin-top: 5rem;
+        border: 1px solid rgba(128, 128, 128, 0.338);
+        padding: 10px;
+    }
+    .input p{
+        width: 5%;
+        font-size: 10px;
+        display: none;
+    }
+    .searchbar{
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+    .firstinp{
+        width: 40%;
+        text-align: right;
+        position: relative;
+    }
+    .secondinp{
+        width: 50%;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.707);
+    }
+    .firstinp a{
+        border-radius: 10px;
+        padding: 7px;
+        color: white;
+        background-color: rgb(0, 94, 255);
+        position: absolute;
+        right: -10px;
+        top: 3px;
+    }
+
+
+    .row1{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .r1{
+        /* border: 1px solid red; */
+        width: 100%;
+        box-shadow: 1px 1px 5px gray;
+        transition: 0.5s;
+        border-radius: 10px;
+        padding-top: 15px;
+        display: block;
+        position: reative;
+        /* min-height: 300px; */
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .r1 .img img{
+        width: 20px;
+        height: 20px;
+        border: 1px solid gray;
+        border-radius: 30px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .r1 h2{
+        font-size: 12px;
+    }
+}

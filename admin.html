@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="icon" href="img/Logo2 png.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><span  class="fas fa-sign-out-alt"></span></a>
+    </nav>
+
+
+    <div class="sidebar" align="center">
+        <p class="fas fa-user"></p>
+        <p class="hello">Hello, Admin</p>
+        <div class="first">
+            <div class="sidebar-link">
+                <a href="#" onclick="showProduct()"><i class="fab fa-product-hunt"></i> View Product</a>
+            </div>
+            <div class="sidebar-link">
+                <a href="#" onclick="showUpload()"><i class="fas fa-cloud-upload-alt"></i> Upload Product</a>
+            </div>
+            <div class="sidebar-link">
+                <a href="#" onclick="showAccounts()"><i class="fas fa-id-card-alt"></i> View Accounts</a>
+            </div>
+            <div class="sidebar-link">
+                <a href="#" type="submit" class="btn" onclick="openPopup()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <div class="popup" id="popup">
+                    <h2>Log Out!</h2>
+                    <p>Are you sure you want to sign out?</p>
+                    <section class="section">
+                    <a href="index.html" type="submit">Yes</a>
+                    <a href="#" type="submit" onclick="closePopup()">No</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    
+        <div class="second">
+            <div class="sidebar-link">
+                <a href="#" onclick="showProduct()"><i class="fab fa-product-hunt"></i></a>
+            </div>
+            <div class="sidebar-link">
+                <a href="#" onclick="showUpload()"><i class="fas fa-cloud-upload-alt"></i></a>
+            </div>
+            <div class="sidebar-link">
+                <a href="#" onclick="showAccounts()"><i class="fas fa-id-card-alt"></i></a>
+            </div>
+            <div class="sidebar-link">
+                <a href="" onclick=""><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="products" id="product" align="center">
+        <h3 align="center">Products</h3>
+        <table align="center" width="900" cellpadding="10" cellspacing="5" border="1">
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Product Name</th>
+                    <th>Affiliate Link</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1</td>
+                    <td>Infinix Smart 8</td>
+                    <td><a href="https://rb.gy/jz6bk8" target="_blank">https://rb.gy/jz6bk8</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>Iphone 13 Pro Max</td>
+                    <td><a href="https://rb.gy/o3rzno" target="_blank">https://rb.gy/o3rzno</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>Iphone 14 Pro</td>
+                    <td><a href="https://rb.gy/jz6bk8" target="_blank">https://rb.gy/jz6bk8</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>Iphone 14 Pro Max</td>
+                    <td><a href="https://rb.gy/o3rzno" target="_blank">https://rb.gy/o3rzno</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>5</td>
+                    <td>Iphone 15 Pro Max</td>
+                    <td><a href="https://rb.gy/jz6bk8" target="_blank">https://rb.gy/jz6bk8</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>Iphone X</td>
+                    <td><a href="https://rb.gy/o3rzno" target="_blank">https://rb.gy/o3rzno</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>7</td>
+                    <td>Motorola Edge 2023</td>
+                    <td><a href="https://rb.gy/jz6bk8" target="_blank">https://rb.gy/jz6bk8</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>8</td>
+                    <td>Motorola G Power</td>
+                    <td><a href="https://rb.gy/o3rzno" target="_blank">https://rb.gy/o3rzno</a></td>
+                    <td>
+                        <button class="edit" >Edit</button>
+                        <button class="del">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="upload" id="upload">
+        <h3 align="center">Upload</h3>
+        <form action="">
+            <label for="">Product Name</label>
+            <input type="text" placeholder="Enter product name">
+
+            <label for="">Description</label>
+            <input type="text" placeholder="Enter description">
+
+            <label for="">Price</label>
+            <input type="text" placeholder="enter price">
+
+            <label for="">Choose Category</label>
+            <select name="" id="">
+                <option value="Smart-Phones">Smart-Phones</option>
+                <option value="Laptops">Laptops</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Televisions">Televisions</option>
+                <option value="Gaming">Gaming</option>
+            </select>
+
+            <label for="">Affiliate Link</label>
+            <input type="url" placeholder="enter affiliate link">
+
+            <label for="">Product Image</label>
+            <input type="file">
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="accounts" id="accounts">
+        <h3 align="center">Accounts</h3>
+        <table align="center" width="1000" cellpadding="10" cellspacing="5">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Username</th>
+                    <th>Email Address</th>
+                    <th>Date Of Admission</th>
+                    <th>User Role</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                
+                 <tr>
+                    <td><img src="img/logo/aliexpress.JPG" alt=""></td>
+                    <td>Aliexpress</td>
+                    <td><a href="">Aliexpress@gmail.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/amazon.JPG" alt=""></td>
+                    <td>Amazon.com</td>
+                    <td><a href="">support@amazon.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/apple.JPG" alt=""></td>
+                    <td>Apple.inc</td>
+                    <td><a href="">Apple@istores.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                 <tr>
+                    <td><img src="img/logo/aliexpress.JPG" alt=""></td>
+                    <td>Aliexpress</td>
+                    <td><a href="">Aliexpress@gmail.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/amazon.JPG" alt=""></td>
+                    <td>Amazon.com</td>
+                    <td><a href="">support@amazon.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/apple.JPG" alt=""></td>
+                    <td>Apple.inc</td>
+                    <td><a href="">Apple@istores.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                 <tr>
+                    <td><img src="img/logo/aliexpress.JPG" alt=""></td>
+                    <td>Aliexpress</td>
+                    <td><a href="">Aliexpress@gmail.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/amazon.JPG" alt=""></td>
+                    <td>Amazon.com</td>
+                    <td><a href="">support@amazon.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/logo/apple.JPG" alt=""></td>
+                    <td>Apple.inc</td>
+                    <td><a href="">Apple@istores.com</a></td>
+                    <td>2024-02-20</td>
+                    <td>Contributor</td>
+                    <td><a href=""><span class="fas fa-pen"></span> <span class="fas fa-trash-alt"></span></a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="js/all.js"></script>
+<script>
+    function showProduct() {
+        document.getElementById('product').style.display = 'block';
+        document.getElementById('upload').style.display = 'none';
+        document.getElementById('accounts').style.display = 'none';
+    }
+
+    function showUpload() {
+        document.getElementById('product').style.display = 'none';
+        document.getElementById('upload').style.display = 'block';
+        document.getElementById('accounts').style.display = 'none';
+    }
+
+    function showAccounts() {
+        document.getElementById('product').style.display = 'none';
+        document.getElementById('upload').style.display = 'none';
+        document.getElementById('accounts').style.display = 'block';
+    }
+</script>
+<script>
+    let popup = document.getElementById("popup")
+
+    function openPopup(){
+         popup.classList.add("open-popup");
+    }
+    function closePopup(){
+         popup.classList.remove("open-popup");
+    }
+
+</script>
+</html>

@@ -1,0 +1,249 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: justify; */
+}
+p{
+    text-align: justify;
+}
+
+
+
+.first{
+    background-color: rgb(0, 94, 255);
+    /* margin-top: 5%; */
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first img{
+    width: 55%;
+    /* padding: 0; */
+    height: 100%;
+}
+.first .text{
+    width: 45%;
+    padding: 20px;
+    color: white;
+}
+.text .loc{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+.loc a{
+    color: white;
+}
+.text h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.text p{
+    margin-top: 0;
+}
+
+.second{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+}
+.second img{
+    width: 45%;
+    padding-right: 10px;
+    height: 100%;
+    border-left: 8px solid rgb(0, 94, 255);
+    border-top-right-radius: 39%;
+    border-bottom-right-radius: 39%;
+}
+.second .text{
+    width: 55%;
+    padding: 20px;
+    color: rgb(0, 94, 255);
+}
+.second .text h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.second .text h1 span{
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(0, 94, 255);
+}
+.second .text p{
+    margin-top: 0;
+}
+
+.third{
+    background: linear-gradient(to right, rgba(0, 94, 255, 0.888), rgba(0, 94, 255, 0));
+    /* background-color: rgba(0, 94, 255, 0.532); */
+    margin-top: 5%;
+    padding: 50px;
+    background: linear-gradient(rgba(), rgba());
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-height: 100%; */
+}
+.third img{
+    width: 40%;
+    padding: 10px;
+    /* height: 50%; */
+}
+.third .text{
+    width: 45%;
+    padding: 20px;
+    color: rgb(3, 38, 97);
+}
+.third .text p{
+    margin-top: 0;
+}
+
+.fourth{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    background-color: rgba(144, 238, 144, 0.145);
+}
+.fourth img{
+    width: 40%;
+    padding-right: 10px;
+    max-height: 300px;
+    object-fit: cover;
+    border-top: 8px solid rgb(0, 94, 255);
+    border-top-right-radius: 300%;
+}
+.fourth .text{
+    width: 55%;
+    padding: 20px;
+    color: rgb(3, 38, 97);
+}
+.fourth .text h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.fourth .text p{
+    margin-top: 0;
+}
+
+.fifth{
+    background-color: white;
+    margin-top: 5%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-height: 100%; */
+}
+.fifth .img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 500%;
+    height: 500px;
+    border: 4px dashed rgb(3, 38, 97);
+}
+.fifth img{
+    width: 95%;
+    border-radius: 500%;
+    padding: 10px;
+    border: 4px solid rgb(3, 38, 97);
+    /* height: 50%; */
+}
+.fifth .text{
+    width: 45%;
+    padding: 20px;
+    color: rgb(3, 38, 97);
+}
+.fifth .text p{
+    margin-top: 0;
+}
+
+
+
+@media (max-width: 800px) {
+    .first{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first img{
+        width: 100%;
+    }
+    .first .text{
+        width: 90%;
+        padding: 20px;
+    }
+    .text .loc{
+        flex-direction: column;
+    }
+
+    .second{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .second .text{
+        width: 100%;
+        color: rgb(0, 94, 255);
+    }
+    .second .text h1{
+        font-size: 40px;
+    }
+    .second img{
+        width: 75%;
+        padding-right: 10px;
+        border-top-right-radius: 39%;
+        border-bottom-right-radius: 0%;
+    }
+
+    .third{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .third .text{
+        width: 100%;
+    }
+    .third img{
+        width: 50%;
+        padding: 5px;
+    }
+
+    .fourth{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .fourth .text{
+        width: 90%;
+        padding: 20px;
+        color: rgb(3, 38, 97);
+    }
+    .fourth img{
+        width: 70%;
+        padding-right: 10px;
+        max-height: 200px;
+        border-top-right-radius: 90%;
+    }
+
+    .fifth{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .fifth .text{
+        width: 90%;
+        padding: 20px;
+        color: rgb(3, 38, 97);
+    }
+    .fifth .img{
+        display: none;
+    }
+}

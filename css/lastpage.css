@@ -1,0 +1,101 @@
+
+.last-page{
+    color: white;
+    background-color: black;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px;
+    padding-bottom: 7%;
+}
+.last-page a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.last-page a:hover{
+    text-decoration: underline;
+}
+.last-page li{
+    list-style-type: none;
+}
+.last-page .one{
+    padding: 10px;
+    width: 33%;
+}
+.last-page .one img{
+    width: 40%;
+}
+.last-page .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+}
+.last-page .two li{
+    padding: 2px;
+}
+.last-page .three{
+    /* margin-left: auto; */
+    width: 33%;
+    margin-right: 50px;
+    margin-top: 15%;
+}
+.last-page .three ul{
+    display: flex;
+    /* gap: 20px; */
+}
+.last-page .three a{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 70px;
+    width: 10%;
+    transition: 0.5s;
+}
+.last-page .three a:hover{
+    background-color: rgba(128, 128, 128, 0.238);
+}
+
+
+
+@media(max-width: 800px){
+    .last-page a, .last-page p{
+        font-size: 10px;
+        /* padding: 10px; */
+    }
+    .last-page .three a{
+        font-size: 10px;
+    }
+    .last-page .one img{
+        width: 100%;
+    }
+    .last-page{
+        /* margin-right: -10%; */
+        width: 97.5%;
+        padding: 5px;
+        justify-content: space-between;
+    }
+    .last-page .three ul{
+        display: flex;
+        gap: 5px;
+    }
+    .last-page .two, .last-page .two-1{
+        width: 70%;
+        margin: 0px;
+        padding: 4px;
+        margin-right: 0px;
+        gap: 2px;
+    }
+    .last-page .one{
+        margin: 0px;
+        padding: 4px;
+    }
+    .last-page .three{
+        margin: 0px;
+        padding: 4px;
+        margin-right: 0px;
+    }
+}

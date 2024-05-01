@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/lastpage.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/Logo2 png.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="home-link" id="home-link"><img
+                src="img/Blue Geometric Minimalist Finance Logo(2).png" alt="" width="170px"></a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <span class="fas fa-bars"></span>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <span class="fas fa-times"></span>
+            </label>
+
+            <a href="index.html" class="home-link"><img src="img/Blue Geometric Minimalist Finance Logo(2).png" alt=""
+                    width="170px"></a>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="About.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search">
+            <span>
+                <form action="">
+                    <input type="" placeholder="Search for products">
+                    <button>Clear</button>
+                    <button class="active"><span class="fas fa-search"> </span> Search</button>
+                </form>
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- Login Page -->
+    <div class="container" id="login">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <a href="" id="forgot">Forgot password?</a>
+            </div>
+            <div class="input-group" id="Admin">
+                <a href="admin.html">Login</a>
+                <!-- <input type="submit" value="Login"> -->
+            </div>
+        </form>
+        <span>Don't have an account? <button onclick="showSignup()">Sign Up</button></span>
+    </div>
+
+    <!-- Sign Up Page -->
+    <div class="container" id="signup">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="input-group">
+                <label for="new_username">Email</label>
+                <input type="email" id="new_email" placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="new_username">Username</label>
+                <input type="text" id="new_username" placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="new_password">Password</label>
+                <input type="password" id="new_password" placeholder="Enter your password">
+            </div>
+            <div class="input-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm your password">
+            </div>
+            <div class="input-group" id="Admin">
+                <a href="admin.html">Sign Up</a>
+                <!-- <input type="submit" value="Sign Up"> -->
+            </div>
+            <span>Already have an account? <button onclick="showLogin()">Login</button></span>
+        </form>
+    </div>
+
+
+
+    <div class="last-page">
+        <div class="one">
+            <a href="index.html"><img src="img/Blue Geometric Minimalist Finance Logo (22).png" alt=""></a>
+            <p>Your Ultimate Destination for Top-notch Gadgets and Gear!</p><br>
+            <p>© 2024 VazAffiliates. All rights reserved</p>
+        </div>
+        <div class="two">
+            <ul>
+                <li>Categories</li>
+                <li><a href="smartphone.html">Smart-Phones</a></li>
+                <li><a href="television.html">Televisions</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="laptop.html">Laptops</a></li>
+                <li><a href="categories.html">All Categories</a></li>
+            </ul>
+            <ul class="two-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="terms.html">Terms of Usage</a></li>
+                <li><a href="Login.html">Login / Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <li><a href=""><span class="fab fa-facebook"></span></a></li>
+                <li><a href=""><span class="fab fa-whatsapp"></span></a></li>
+                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="js/all.js"></script>
+<script>
+    function showLogin() {
+        document.getElementById('login').style.display = 'block';
+        document.getElementById('signup').style.display = 'none';
+    }
+
+    function showSignup() {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('signup').style.display = 'block';
+    }
+</script>
+</html>
